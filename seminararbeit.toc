@@ -1,0 +1,11 @@
+\babel@toc {french}{}
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{4}% 
+\contentsline {section}{\numberline {2}DirAC}{4}% 
+\contentsline {subsection}{\numberline {2.1}Implementierung}{4}% 
+\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{4}% 
+\contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{5}% 
+\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{6}% 
+\contentsline {paragraph}{Resynthese}{7}% 
+\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{7}% 
+\contentsline {section}{\numberline {4}Schlussfolgerung und Ausblick}{7}% 
