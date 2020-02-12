@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{iem} %enthaelt viele nuetzliche usepackages und definiert 
+% ein paar Reformatierungen
+\hyphenation{}
+
+\begin{document}
+\selectlanguage{ngerman}
+
+\title{Untersuchung verschiedener Upmixingmethoden für DirAC}
+
+\author{Manuel Planton, BSc \\ Michael Hirschmugl, BSc\\\\\small{Betreuung: Dr. Franz Zotter, Dr. Matthias Frank}}
+
+\markboth{}{M. Planton, M. Hirschmugl: DirAC Upmixing}
+
+\doctype{Seminararbeit aus Algorithmen in Akustik und Computermusik 2}
+
+%\date{Juni 2008}
+
+\maketitle
+\newpage
+\pagestyle{empty}
+\hspace{1cm}\vspace{3cm}
+
+\hspace{1cm}\vspace{1cm}
+
+\begin{abstract}
+   Kurzfassungstext. Beispielzitate Buch~\cite{Williams}, in einem Konferenzband\cite{Avizienis06}, Diplomarbeit~\cite{Pomberger08}, Dissertation~\cite{Li05}, Fachzeitschriftenartikel~\cite{Weinreich80}.
+\end{abstract}
+\newpage
+\pagestyle{myheadings}
+\hspace{1cm}\vspace{2cm}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+
+\section{DirAC}
+    \subsection{Implementierung}
+    \input{implementierung/main.tex}
+        \paragraph{Analyse von Richtungs- und Diffusanteil}
+        \input{implementierung/analyse.tex}
+        \paragraph{Upmixing auf Lautsprecherandordnung}
+        \input{implementierung/upmixing.tex}
+        \paragraph{Trennung von Diffus- und Richtungsanteil}
+        \input{implementierung/trennung.tex}
+        \paragraph{Resynthese}
+        \input{implementierung/resynthese.tex}
+
+\section{Hörversuch}
+
+\section{Schlussfolgerung und Ausblick}
+
+\bibliographystyle{IEEEtranSA}
+\bibliography{bib_database}
+
+\end{document}
+
+
+

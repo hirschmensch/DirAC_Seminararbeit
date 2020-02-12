@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IEM Latex Style for articles
+%
+% Christopher Frauenberger, 28.6.2003
+%
+% provides:
+% \maketitle - renewed to IEM layout
+%
+% NEW:
+%       \author
+%       \authorcontact
+%       \title
+%       \doctype                
+%       \classification         according to ACM Computing Reviews
+%                               1998
+%       \keywords
+%       \pages                  to use with an endlabel. ammount of
+%                               pages 
+%       
+%       Modified 2015, Franz Zotter
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Graphics package graphics
+% usage : \includegraphics{figure.ps} within figure environment
+\usepackage{graphicx}  
+% Graphics package subfigure 
+% using multiple graphics in one figure environment 
+% usage : \subfigure[..]{\includegraphics{filename}} 
+\usepackage{subfigure}  
+% epstopdf for pdflatex
+\usepackage{epstopdf}
+% nicer typesetting using pdflatex
+\usepackage{microtype}
+
+
+% Use the following packages
+\usepackage[ngerman,english,french]{babel}
+%\usepakage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{sectsty}
+%\usepackage{t1enc}
+%\usepackage{latexsym}
+\usepackage{color}
+\usepackage{relsize}
+\usepackage{appendix}
+\definecolor{iemcolor}{rgb}{0.16, 0.26, 0.58}
+% Font selection
+\renewcommand{\familydefault}{ptm}
+\allsectionsfont{\normalfont\sffamily\bfseries}
+
+% Mathematics
+\usepackage{amsmath, amssymb, trfsigns,multicol,upgreek,nicefrac,dsfont,bm,cancel,amsbsy}
+
+% URL formatting package url
+% typesets Url in teletype and manages splitting over lines
+% usage : \url{http://www.example.com}
+\usepackage{url}
+
+% Page dimensions 
+% either in inches or in cm
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{23cm}
+\setlength{\topmargin}{0cm}
+\setlength{\headheight}{0.5cm}
+\setlength{\headsep}{0.5cm}
+\setlength{\oddsidemargin}{1cm}
+\setlength{\evensidemargin}{1cm}
+
+% Paragraph style 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+% Specifying the page-style by 
+% \markright{} : set the right-heading
+% \pagenumbering{roman} : i,ii,iii,iv ... numbering 
+\pagestyle{myheadings}
+\markright{}
+\pagenumbering{roman}
+
+% use wide spacing (1.5-2)
+% larger typeset
+% 12pt typeset is normal-size as specified in \documentclass 
+%\renewcommand{\baselinestretch}{1.66}
+%\normalsize
+
+% Doctype could be ``Thesis'', ``Essay'' etc.
+\newcommand{\doctype}[1]{\gdef\@doctype{#1}}
+\doctype{}
+
+\newcommand{\supervisor}[1]{\gdef\@supervisor{#1}}
+\supervisor{}
+\newcommand{\institute}[1]{\gdef\@institute{#1}}
+\institute{}
+
+
+\renewcommand{\maketitle}{\begin{titlepage}
+\usefont{OT1}{cmss}{m}{n}  
+  \vspace*{35mm}
+
+  {\large \@doctype}
+
+  \vspace{7mm}
+  {\Large\bf \@title}
+
+  \vspace{105mm}
+
+
+  {\@author
+  
+  Graz, \@date}
+
+  \vspace{5mm}
+
+%  \begin{minipage}{0.9\textwidth}
+%     \begin{minipage}{0.6\textwidth}
+%  	\textcolor{iemcolor}{Institut für Elektronische Musik und Akustik}
+%     \end{minipage}
+%     \begin{minipage}{0.15\textwidth}
+%  \includegraphics[height=1.5cm]{iemlogo}
+%     \end{minipage}
+%  \end{minipage}
+%  \flushleft
+%  \hspace{5mm}\includegraphics[height=1.5cm]{kuglogo} 
+  \begin{minipage}{0.95\textwidth}
+     \begin{minipage}{0.4\textwidth}
+  	\flushleft\includegraphics[bb=183 80 616 400, height=2.0cm]{KUG_logo_pantone876.pdf}
+     \end{minipage}
+     \begin{minipage}{0.6\textwidth}
+	\begin{minipage}{0.75\textwidth}
+	   \vspace{2.5cm}
+	   \textcolor{iemcolor}{\footnotesize institut für elektronische musik und akustik}
+	\end{minipage}
+	\begin{minipage}{.2\textwidth}
+           \vspace{1.3cm}
+            \flushright\includegraphics[bb=36 36 230 193, height=1.5cm]{iemlogo.pdf}
+	 \end{minipage}
+     \end{minipage}
+  \end{minipage}
+  \usefont{T1}{cms}{m}{n}  
+  \end{titlepage}%
+  \setcounter{page}{2}}
+
+
+\newcommand{\pages}[1]{\gdef\@pages{#1}}
+\newcommand{\classification}[1]{\gdef\@classification{#1}}
+\newcommand{\keywords}[1]{\gdef\@keywords{#1}}
+\pages{}
+%\classification{}
+\keywords{}
+\newcommand{\authorcontact}[1]{\gdef\@authorcontact{#1}}
+%\authorcontact{}
+
+\pagenumbering{arabic}
+
+%\renewenvironment{abstract}{%
+%  {\bf\@title}
+%
+%  \vspace{1ex}
+%
+%  \@author \\
+%  Contact : \@authorcontact
+%
+%  \vspace{1ex}
+%
+%  \@doctype\\
+%  Institut für Elektronische Musik und Akustik \\
+%  Universität für Musik und darstellende Kunst \\
+%  \@date  \hspace{1cm} \@pages 
+%
+%  \vspace*{2ex}
+%  {\large\bf Kurzfassung}
+%
+%  }{
+%  \vspace{1ex}
+%
+%  Keywords: \@keywords
+%
+%  \newpage
+%  % count the pages with 1,2,3 after the frontmatter
+%  \pagenumbering{arabic}
+%}
+
