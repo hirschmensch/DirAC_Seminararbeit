@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  12 FEB 2020 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  12 FEB 2020 23:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,24 +546,64 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
  [3]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
- (./implementierung/main.tex
-Overfull \hbox (1.94145pt too wide) in paragraph at lines 3--4
-[]\T1/ptm/m/n/12 Zu Be-ginn wer-den ver-schie-de-ne Pa-ra-me-ter und Ar-rays in
--itia-li-siert, so-wie auch ei-ne VBAP-
- []
-
-) (./implementierung/analyse.tex
-Overfull \hbox (22.4828pt too wide) in paragraph at lines 1--2
-\T1/ptm/m/n/12 wird als Vek-tor $[][]\OT1/cmr/m/n/12 (-20) [\OML/cmm/m/it/12 k\
-OT1/cmr/m/n/12 (-20) ] = [\OML/cmm/m/it/12 X[]\OT1/cmr/m/n/12 (-20) [\OML/cmm/m
-/it/12 k\OT1/cmr/m/n/12 (-20) ]\OML/cmm/m/it/12 ; Y[]\OT1/cmr/m/n/12 (-20) [\OM
-L/cmm/m/it/12 k\OT1/cmr/m/n/12 (-20) ]\OML/cmm/m/it/12 ; Z[]\OT1/cmr/m/n/12 (-2
-0) [\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (-20) ]]$ \T1/ptm/m/n/12 aus den ge-rich-
-te-ten An-tei-len (Druckgradienten-
+ (./implementierung/main.tex)
+(./implementierung/analyse.tex
+Overfull \hbox (0.88828pt too wide) in paragraph at lines 1--2
+\T1/ptm/m/n/12 Druckgradienten-Mikrofone) des B-Format Si-gnals be-stimmt. Der 
+Schall-druck ist schlicht
  []
 
 [4]
-<implementierung/plots/flow.png, id=34, 718.18312pt x 543.53062pt>
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Extra }, or forgotten $.
+\MT@orig@add@accent ...@spacefactor \spacefactor }
+                                                  \accent #1 #2\egroup \spac...
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Missing { inserted.
+<to be read again> 
+                   $
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Bad space factor (0).
+<recently read> \accent@spacefactor 
+                                    
+l.19 Die \"Diffusheit\" $
+                         \psi_{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.19 Die \"Diffusheit\" $\psi
+                             _{m}[k]$ kann schlussendlich aus dem Vergleich ...
+
+? 
+<implementierung/plots/flow.png, id=32, 718.18312pt x 543.53062pt>
 File: implementierung/plots/flow.png Graphic file (type png)
 <use implementierung/plots/flow.png>
 Package pdftex.def Info: implementierung/plots/flow.png  used on input line 28.
@@ -571,19 +611,27 @@ Package pdftex.def Info: implementierung/plots/flow.png  used on input line 28.
 (pdftex.def)             Requested size: 298.75262pt x 226.10008pt.
 ) (./implementierung/upmixing.tex [5 <./implementierung/plots/flow.png (PNG cop
 y)>]
-Overfull \hbox (3.35643pt too wide) in paragraph at lines 3--4
-\T1/ptm/m/n/12 wird hier nicht wei-ter aus-ge-führt und kann zum Bei-spiel im B
-uch Ämbi-so-nics"nachgelesen
- []
+
+LaTeX Warning: Reference `' on page 6 undefined on input line 3.
 
 <implementierung/plots/t-design.png, id=41, 310.91156pt x 292.09125pt>
 File: implementierung/plots/t-design.png Graphic file (type png)
 <use implementierung/plots/t-design.png>
 Package pdftex.def Info: implementierung/plots/t-design.png  used on input line
  7.
-(pdftex.def)             Requested size: 298.75262pt x 280.67181pt.
-) (./implementierung/trennung.tex [6 <./implementierung/plots/t-design.png (PNG
- copy)>]) (./implementierung/resynthese.tex)
+(pdftex.def)             Requested size: 149.37956pt x 140.3359pt.
+) (./implementierung/trennung.tex)
+Overfull \hbox (6.3721pt too wide) in paragraph at lines 3--47
+\T1/ptm/m/n/12 om-ni-di-rek-tio-na-len Si-gnal er-zeugt wer-den. Die-ser ent-sp
+richt le-dig-lich dem nicht-gerichteten
+ []
+
+[6 <./implementierung/plots/t-design.png (PNG copy)>]
+(./implementierung/resynthese.tex
+
+LaTeX Warning: Reference `' on page 7 undefined on input line 1.
+
+)
 No file seminararbeit.bbl.
 [7] (./seminararbeit.aux)
 
@@ -592,33 +640,40 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
- ) 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 19 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 6717 strings out of 492609
- 99968 string characters out of 6131463
- 208328 words of memory out of 5000000
- 10384 multiletter control sequences out of 15000+600000
+ 6718 strings out of 492609
+ 99957 string characters out of 6131463
+ 209328 words of memory out of 5000000
+ 10385 multiletter control sequences out of 15000+600000
  51883 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,10n,40p,842b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on seminararbeit.pdf (7 pages, 440243 bytes).
+ 49i,10n,40p,1319b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/us
+r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfsx1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmri8a.pfb>
+Output written on seminararbeit.pdf (7 pages, 443685 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
