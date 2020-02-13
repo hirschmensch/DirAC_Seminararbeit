@@ -14,7 +14,7 @@
 
 \doctype{Seminararbeit aus Algorithmen in Akustik und Computermusik 2}
 
-%\date{Juni 2008}
+\date{WS 2019/2020}
 
 \maketitle
 \newpage
@@ -24,7 +24,9 @@
 \hspace{1cm}\vspace{1cm}
 
 \begin{abstract}
-   Kurzfassungstext. Beispielzitate Buch~\cite{Williams}, in einem Konferenzband\cite{Avizienis06}, Diplomarbeit~\cite{Pomberger08}, Dissertation~\cite{Li05}, Fachzeitschriftenartikel~\cite{Weinreich80}.
+   Diese Seminararbeit behandelt verschiedene Ausführungen und auch Optimierungen des DirAC-Verfahrens (Directional Audio Coding). Mit diesem Verfahren können Ambisonics Aufnahmen erster Ordnung in ihrer räumlichen Darstellung verbessert und auf eine höhrere Ordnung hochgerechnet werden.
+   Da die Aufnahme in Ambisonics erster Ordnung mit Hilfe von Soundfield Mikrofonen sehr einfach und günstig durchgeführt werden kann, jedoch eine wenig überzeugende Darstellung von Räumlichkeit und Klang bietet, kann ein solches Upmixing die Wiedergabe in vielerlei Hinsicht verbessern.
+   Zu diesem Zweck sollen verschiedene Kombinationen von Upmixing-Methoden untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
 \end{abstract}
 \newpage
 \pagestyle{myheadings}
@@ -58,6 +60,16 @@
 
 
 \section{Hörversuch}
+Die unterschiedlichen Dekodierungsmethoden und Dekorrelationsalgorithmen wurden anschließend in einem Hörversuch auf die Probe gestellt. Hierzu wurden verschiedene Ambisonics Aufnahmen im B-Format herangezogen und mit unterschiedlichen Kombinationen aus Diffusität und Dekodierung bearbeitet. Die Ergebnisse konnten dann direkt im Produktionsstudio des Instituts für elektronische Musik wiedergegeben und von Versuchspersonen bewertet werden. Der Augenmerk sollte dabei auf Klangqualität und Darstellung der Räumlichkeit liegen. Die folgenden Kapitel sollen die Annahmen, Hypothesen, den Aufbau und die Ergebnisse dieses Versuchs darstellen.
+
+Generell kann der Hörversuch in die folgende Übersicht zerlegt werden:
+\begin{itemize}
+    \item Reaper Projekt gesteuert durch Mushra-Test
+    \item Vergleich von 6 Algorithmen + Referenz
+    \item Ausgehend von 4 verglichenen Testsignale
+    \item Einschätzen von Klangqualität und Räumlichkeit
+\end{itemize}
+
     \subsection{Ziele des Hörversuchs}
     \input{ziele_hoerversuch/main.tex}
     \subsection{Aufbau und Konzept}

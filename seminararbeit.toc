@@ -14,8 +14,12 @@
 \contentsline {paragraph}{Widening Plugin}{7}% 
 \contentsline {paragraph}{Random Phase}{7}% 
 \contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{7}% 
-\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{7}% 
+\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{8}% 
 \contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{8}% 
-\contentsline {subsection}{\numberline {3.3}Ergebnis}{8}% 
-\contentsline {subsection}{\numberline {3.4}Diskussion}{8}% 
-\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{8}% 
+\contentsline {paragraph}{Ausgangssignale}{8}% 
+\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{9}% 
+\contentsline {paragraph}{Wiedergabesystem}{10}% 
+\contentsline {paragraph}{Versuchsinterface}{10}% 
+\contentsline {subsection}{\numberline {3.3}Ergebnis}{10}% 
+\contentsline {subsection}{\numberline {3.4}Diskussion}{10}% 
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{10}% 
