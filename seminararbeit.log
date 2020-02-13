@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  12 FEB 2020 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.2.5)  13 FEB 2020 01:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -543,17 +543,17 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 \tf@toc=\write3
 \openout3 = `seminararbeit.toc'.
 
- [3]
+ [3] (./einleitung.tex)
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
- (./implementierung/main.tex)
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
+ (./annahmen/main.tex)
+(./funktionsweise/main.tex) (./implementierung/main.tex) [4]
 (./implementierung/analyse.tex
 Overfull \hbox (0.88828pt too wide) in paragraph at lines 1--2
 \T1/ptm/m/n/12 Druckgradienten-Mikrofone) des B-Format Si-gnals be-stimmt. Der 
 Schall-druck ist schlicht
  []
 
-[4]
 ! Improper \spacefactor.
 <recently read> \spacefactor 
                              
@@ -603,14 +603,13 @@ l.19 Die \"Diffusheit\" $\psi
                              _{m}[k]$ kann schlussendlich aus dem Vergleich ...
 
 ? 
-<implementierung/plots/flow.png, id=32, 718.18312pt x 543.53062pt>
+<implementierung/plots/flow.png, id=30, 718.18312pt x 543.53062pt>
 File: implementierung/plots/flow.png Graphic file (type png)
 <use implementierung/plots/flow.png>
 Package pdftex.def Info: implementierung/plots/flow.png  used on input line 28.
 
 (pdftex.def)             Requested size: 298.75262pt x 226.10008pt.
-) (./implementierung/upmixing.tex [5 <./implementierung/plots/flow.png (PNG cop
-y)>]
+) (./implementierung/upmixing.tex [5]
 
 LaTeX Warning: Reference `' on page 6 undefined on input line 3.
 
@@ -620,28 +619,32 @@ File: implementierung/plots/t-design.png Graphic file (type png)
 Package pdftex.def Info: implementierung/plots/t-design.png  used on input line
  7.
 (pdftex.def)             Requested size: 149.37956pt x 140.3359pt.
-) (./implementierung/trennung.tex)
-Overfull \hbox (6.3721pt too wide) in paragraph at lines 3--47
+) [6 <./implementierung/plots/flow.png (PNG copy)> <./implementierung/plots/t-d
+esign.png (PNG copy)>] (./implementierung/trennung.tex)
+Overfull \hbox (6.3721pt too wide) in paragraph at lines 3--52
 \T1/ptm/m/n/12 om-ni-di-rek-tio-na-len Si-gnal er-zeugt wer-den. Die-ser ent-sp
 richt le-dig-lich dem nicht-gerichteten
  []
 
-[6 <./implementierung/plots/t-design.png (PNG copy)>]
 (./implementierung/resynthese.tex
 
 LaTeX Warning: Reference `' on page 7 undefined on input line 1.
 
-)
+) (./dekorrelation/main.tex) (./ziele_hoerversuch/main.tex) (./aufbau/main.tex
+<aufbau/plots/algos.png, id=45, 777.90625pt x 502.87875pt>
+File: aufbau/plots/algos.png Graphic file (type png)
+<use aufbau/plots/algos.png>
+Package pdftex.def Info: aufbau/plots/algos.png  used on input line 3.
+(pdftex.def)             Requested size: 384.10959pt x 248.31572pt.
+
+[7]) (./ergebnis/main.tex) (./diskussion/main.tex) (./zusammenfassung.tex)
 No file seminararbeit.bbl.
-[7] (./seminararbeit.aux)
+[8 <./aufbau/plots/algos.png (PNG copy)>] (./seminararbeit.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 1)
@@ -649,10 +652,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 19 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6718 strings out of 492609
- 99957 string characters out of 6131463
- 209328 words of memory out of 5000000
- 10385 multiletter control sequences out of 15000+600000
+ 6752 strings out of 492609
+ 100567 string characters out of 6131463
+ 209338 words of memory out of 5000000
+ 10390 multiletter control sequences out of 15000+600000
  51883 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,10n,40p,1319b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -673,10 +676,10 @@ ype1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on seminararbeit.pdf (7 pages, 443685 bytes).
+Output written on seminararbeit.pdf (8 pages, 537651 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 109 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28693 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 28698 words of extra memory for PDF output out of 29859 (max. 10000000)
 

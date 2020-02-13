@@ -2,10 +2,20 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Einleitung}{4}% 
 \contentsline {section}{\numberline {2}DirAC}{4}% 
-\contentsline {subsection}{\numberline {2.1}Implementierung}{4}% 
-\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{4}% 
+\contentsline {subsection}{\numberline {2.1}Annahmen aus der Psychoakustik}{4}% 
+\contentsline {subsection}{\numberline {2.2}Funktionsweise}{4}% 
+\contentsline {subsection}{\numberline {2.3}Implementierung}{4}% 
+\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{5}% 
 \contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{5}% 
-\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{6}% 
+\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{7}% 
 \contentsline {paragraph}{Resynthese}{7}% 
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{7}% 
+\contentsline {paragraph}{Feedback Network Delay}{7}% 
+\contentsline {paragraph}{Widening Plugin}{7}% 
+\contentsline {paragraph}{Random Phase}{7}% 
 \contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{7}% 
-\contentsline {section}{\numberline {4}Schlussfolgerung und Ausblick}{7}% 
+\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{7}% 
+\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{8}% 
+\contentsline {subsection}{\numberline {3.3}Ergebnis}{8}% 
+\contentsline {subsection}{\numberline {3.4}Diskussion}{8}% 
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{8}% 
