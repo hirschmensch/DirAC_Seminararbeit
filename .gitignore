@@ -1,0 +1,4 @@
+# ignore the following files
+seminararbeit.pdf
+*.log
+*.aux
