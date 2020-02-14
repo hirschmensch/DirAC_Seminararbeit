@@ -9,17 +9,17 @@
 \contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{6}
 \contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{7}
 \contentsline {paragraph}{Resynthese}{7}
-\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{7}
-\contentsline {paragraph}{Feedback Network Delay}{7}
-\contentsline {paragraph}{Widening Plugin}{8}
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{8}
 \contentsline {paragraph}{Random Phase}{8}
-\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{8}
-\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{8}
-\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{9}
-\contentsline {paragraph}{Ausgangssignale}{9}
-\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{9}
-\contentsline {paragraph}{Wiedergabesystem}{9}
-\contentsline {paragraph}{Versuchsinterface}{9}
-\contentsline {subsection}{\numberline {3.3}Ergebnis}{10}
-\contentsline {subsection}{\numberline {3.4}Diskussion}{10}
-\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{10}
+\contentsline {paragraph}{Feedback Delay Network}{8}
+\contentsline {paragraph}{Widening}{9}
+\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{9}
+\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{9}
+\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{10}
+\contentsline {paragraph}{Ausgangssignale}{10}
+\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{10}
+\contentsline {paragraph}{Wiedergabesystem}{11}
+\contentsline {paragraph}{Versuchsinterface}{11}
+\contentsline {subsection}{\numberline {3.3}Ergebnis}{11}
+\contentsline {subsection}{\numberline {3.4}Diskussion}{11}
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{11}
