@@ -4,22 +4,23 @@
 \contentsline {section}{\numberline {2}DirAC}{4}
 \contentsline {subsection}{\numberline {2.1}Annahmen aus der Psychoakustik}{4}
 \contentsline {subsection}{\numberline {2.2}Funktionsweise}{4}
+\contentsline {paragraph}{Allgemein}{4}
 \contentsline {subsection}{\numberline {2.3}Implementierung}{4}
-\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{5}
-\contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{6}
-\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{7}
-\contentsline {paragraph}{Resynthese}{7}
-\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{8}
-\contentsline {paragraph}{Random Phase}{8}
-\contentsline {paragraph}{Feedback Delay Network}{8}
-\contentsline {paragraph}{Widening}{9}
-\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{9}
-\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{9}
-\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{10}
-\contentsline {paragraph}{Ausgangssignale}{10}
-\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{10}
-\contentsline {paragraph}{Wiedergabesystem}{11}
-\contentsline {paragraph}{Versuchsinterface}{11}
-\contentsline {subsection}{\numberline {3.3}Ergebnis}{11}
-\contentsline {subsection}{\numberline {3.4}Diskussion}{11}
-\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{11}
+\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{6}
+\contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{7}
+\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{8}
+\contentsline {paragraph}{Resynthese}{8}
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{9}
+\contentsline {paragraph}{Random Phase}{9}
+\contentsline {paragraph}{Feedback Delay Network}{9}
+\contentsline {paragraph}{Widening}{10}
+\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{10}
+\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{10}
+\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{11}
+\contentsline {paragraph}{Ausgangssignale}{11}
+\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{11}
+\contentsline {paragraph}{Wiedergabesystem}{12}
+\contentsline {paragraph}{Versuchsinterface}{12}
+\contentsline {subsection}{\numberline {3.3}Ergebnis}{12}
+\contentsline {subsection}{\numberline {3.4}Diskussion}{12}
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{12}
