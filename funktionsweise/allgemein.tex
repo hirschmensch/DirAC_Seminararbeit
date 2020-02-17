@@ -1,4 +1,4 @@
-test test test this is allgemein.tex
+In Abbildung \ref{fig:dirac_flow_general} ist das Prinzip des DirAC Algorithmus zu sehen. Die $M$ Mikrofonkanäle werden mittels STFT (oder Filterbank) in den Frequenzbereich gebracht. Es wird ein Pseudointensitätsvektor gebildet, der im Analyseschritt verwendet wird, um die Diffusität $\Psi$ und Richtung $D$ pro Frequenzband des Signals zu ermitteln. Hier fließt die resultierende psychoakustische Annahme ein (siehe \ref{annahmen}), weswegen nur eine Richtung pro Frequenzband ermittelt wird.
 
 \begin{figure}[!ht]
   \centering
@@ -7,22 +7,20 @@ test test test this is allgemein.tex
   \label{fig:dirac_flow_general}
 \end{figure}
 
-still allgemein.tex
+Aus den M Eingangskanälen werden mit virtuellen Mikrofonen die N Ausgangskanäle gebildet (siehe Abbildung \ref{fig:dirac_flow_high}). Mit den ermittelten Eigenschaften werden die N Kanäle spektral in einen gerichteten Anteil und in einen Diffusanteil getrennt. Der gerichtete Anteil hat bereits eine höhere Auflösung als die Eingangskanäle. Der Diffusanteil wird mit einem Dekorrelationsverfahren zur Erhöhung der Diffusität dekorreliert (siehe \ref{dekorrelation}). Anschließend werden die beiden Signalanteile per Addition wieder zusammengebracht und via iSTFT wieder in den Zeitbereich transformiert.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.9\textwidth]{funktionsweise/pic/pulkki_dirac_flow_2.png}
-  \caption{???}
-  \label{fig:dirac_flow_?}
+  \caption{DirAC zur hochqualitativen Reproduktion von B-Format Signalen}
+  \label{fig:dirac_flow_high}
 \end{figure}
 
-still allgemein.tex
+In dieser Seminararbeit und dem Versuch wird ausschließlich diese Variante des DirAC-Algorithmus verwendet, der für eine hohe Audioqualität entwickelt wurde. In Abbildung \ref{fig:dirac_flow_low} ist eine andere Variante abgebildet, bei der die Signalübertragung eine größere Rolle spielt. Die Integralzeichen in den Abbildungen symbolisieren eine zeitliche Mittelung der Parameter zur Vermeidung von Artefakten.
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.9\textwidth]{funktionsweise/pic/pulkki_dirac_flow_3.png}
-  \caption{?}
-  \label{fig:dirac_flow_???}
+  \caption{DirAC für Telekommunikation}
+  \label{fig:dirac_flow_low}
 \end{figure}
-
-still allgemein.tex
