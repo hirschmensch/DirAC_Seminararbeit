@@ -11,7 +11,19 @@ Es wurden insgesamt vier unterschiedliche Aufnahmen als Testsignale herangezogen
 Die synthetischen Signale wurden dabei mit Hilfe eines weiteren Skriptes in Octave erzeugt. Das zusätzlich verhallte Signal wurde nachträglich in Reaper mit dem FDN Reverb Plugin aus der IEM Plugin Suite bearbeitet. Dies soll einfach einen direkteren Vergleich der Performance zwischen stark gerichtetem und stark diffusem Signal bieten. Die Live-Musik Aufnahme wurde im Cube angefertigt und bietet einen große Räumlichkeit, wobei die Ambience-Aufnahme an einer Straßenkreuzung hier die größte Diffusität aufweist. Diese Aufnahmen wurden mit Soundfield Mikrofonen durchgeführt. Somit werden im Hörversuch vier sehr unterschiedliche Aufnahmeszenarien verglichen.
 
 \paragraph{Verglichene Kombinationen von Dekorrelation und Dekodierung}
-Abbildung \ref{fig_algos} zeigt eine graphische Darstellung der unterschiedlichen Kombinationen der Wiedergabe von Testsignalen.
+
+Die folgende Liste zeigt die verglichenen Kombinationen aus Upmixing-, Dekorrelations- und Dekodierungsmethoden. 
+
+\begin{itemize}
+	\item DirAC, 12 Speaker + Random Phase Decorrelation
+	\item DirAC, 12 Speaker + FDN Decorrelation
+	\item DirAC, T-Design + FDN Decorrelation
+	\item DirAC, T-Design + Widening Plugin
+	\item Harpex
+	\item Compass
+\end{itemize}
+
+Abbildung \ref{fig_algos} ist eine schematische Darstellung der Wiedergabe der Testsignale.
 
 \begin{figure}[!ht]
   \centering
@@ -33,5 +45,9 @@ Abbildung \ref{fig_algos} zeigt eine graphische Darstellung der unterschiedliche
 \paragraph{Wiedergabesystem}
 Als Wiedergabesytem wurde die Lautsprecheranordnung des Produktionsstudios des IEM verwendet.
 
+Bild von Lautsprecheranordnung.
+
 \paragraph{Versuchsinterface}
 Um die Antworten der Versuchspersonen auszuwerten wurde die MUSHRA-Anwendung eingesetzt. Diese Anwendung wird über eine \textit{.json}-Datei konfiguriert.
+
+Screenshot von Mushra-Interface.

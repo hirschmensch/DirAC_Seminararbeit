@@ -26,7 +26,7 @@
 \begin{abstract}
    Diese Seminararbeit behandelt verschiedene Ausführungen und auch Optimierungen des DirAC-Verfahrens (Directional Audio Coding). Mit diesem Verfahren können Ambisonics Aufnahmen erster Ordnung in ihrer räumlichen Darstellung verbessert und auf eine höhrere Ordnung hochgerechnet werden.
    Da die Aufnahme in Ambisonics erster Ordnung mit Hilfe von Soundfield Mikrofonen sehr einfach und günstig durchgeführt werden kann, jedoch eine wenig überzeugende Darstellung von Räumlichkeit und Klang bietet, kann ein solches Upmixing die Wiedergabe in vielerlei Hinsicht verbessern.
-   Zu diesem Zweck sollen verschiedene Kombinationen von Upmixing-Methoden untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
+   Zu diesem Zweck sollen verschiedene von DirAC-Implementierungen untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
 \end{abstract}
 \newpage
 \pagestyle{myheadings}
@@ -39,6 +39,9 @@
 \input{einleitung.tex}
 
 \section{DirAC}
+In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC erläutert sowie die Implementierung in diesem Projekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-verfahrens untersucht, wobei sich diese einerseits durch Methode der Diffusitätssynthese und weiters auch durch zwei verschiedee Dekodierungsansätze verwenden. Die Methoden zur Synthese von Diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave ausprogrammiert wurde, auch bereits erhältliche Plugins wie ein Widening und ein FDN-Plugin aus der IEM Plugin-Suite. Die bei beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters die Dekodierung auf eine T-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
+
+DirAC (Directional Audio Coding) ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinzidenzmikrofon-Anordnungen wie FOA (First Order Ambisonics). Das Ziel des Algorithmus ist eine Erhöhung der Lokalisationsschärfe bei gleichzeitiger Verbesserung der Qualität der räumlichen Wiedergabe.
     \subsection{Annahmen aus der Psychoakustik} \label{annahmen}
     \input{annahmen/main.tex}
     \subsection{Funktionsweise}
@@ -61,9 +64,9 @@
 
 
 \section{Hörversuch}
-Die unterschiedlichen Dekodierungsmethoden und Dekorrelationsalgorithmen wurden anschließend in einem Hörversuch auf die Probe gestellt. Hierzu wurden verschiedene Ambisonics Aufnahmen im B-Format herangezogen und mit unterschiedlichen Kombinationen aus Diffusität und Dekodierung bearbeitet. Die Ergebnisse konnten dann direkt im Produktionsstudio des Instituts für elektronische Musik wiedergegeben und von Versuchspersonen bewertet werden. Der Augenmerk sollte dabei auf Klangqualität und Darstellung der Räumlichkeit liegen. Die folgenden Kapitel sollen die Annahmen, Hypothesen, den Aufbau und die Ergebnisse dieses Versuchs darstellen.
+Die unterschiedlichen Upmixing- und Dekorrelationsalgorithmen, sowie die beiden Dekodierungsmethoden, wurden anschließend in einem Hörversuch auf die Probe gestellt. Hierzu wurden verschiedene Ambisonics Aufnahmen im B-Format herangezogen und mit unterschiedlichen Kombinationen aus Upmixing, Diffusität und Dekodierung bearbeitet. Die Ergebnisse konnten dann direkt im Produktionsstudio des Instituts für elektronische Musik wiedergegeben und von Versuchspersonen bewertet werden. Der Augenmerk sollte dabei auf Klangqualität und Darstellung der Räumlichkeit liegen. Die folgenden Kapitel sollen die Annahmen, Hypothesen, den Aufbau und die Ergebnisse dieses Versuchs darstellen.
 
-Generell kann der Hörversuch in die folgende Übersicht zerlegt werden:
+Generell kann der Hörversuch in die folgende vier Komponenten des Aufbaues und Versuchsdesigns zerlegt werden, welche anschließend im Kapitel \ref{aufbau_und_konzept} genauer erläutert werden:
 \begin{itemize}
     \item Reaper Projekt gesteuert durch Mushra-Test
     \item Vergleich von 6 Algorithmen + Referenz
@@ -74,6 +77,7 @@ Generell kann der Hörversuch in die folgende Übersicht zerlegt werden:
     \subsection{Ziele des Hörversuchs}
     \input{ziele_hoerversuch/main.tex}
     \subsection{Aufbau und Konzept}
+    \label{aufbau_und_konzept}
     \input{aufbau/main.tex}
     \subsection{Ergebnis}
     \input{ergebnis/main.tex}
