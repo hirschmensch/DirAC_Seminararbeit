@@ -6,7 +6,9 @@ Die Dekodierung auf eine gegebene Lautsprecheranordnung durch eine VBAP-Tabelle 
   \centering
   \includegraphics[width=0.35\textwidth]{implementierung/plots/t-design.png}
   \label{fig:tdesign}
-  \caption{9-Design T-Design}
+  \caption{9-Design T-Design\protect\footnotemark}
 \end{figure}
+
+\footnotetext{Quelle: \cite{ambi-book}}
 
 Zur Dekodierung wird in Octave also eine Matrix mit Lautsprecheramplituden für Schalleinfallsrichtungen erstellt. Somit kann einer gegebenen Richtung (bestehend aus Azimuth und Elevation) eine Amplitude am entsprechenden Lautsprecherkanal zugeordnet werden.

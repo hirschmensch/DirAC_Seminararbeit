@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{12}
 \contentsline {paragraph}{Ausgangssignale}{12}
 \contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{13}
-\contentsline {paragraph}{Wiedergabesystem}{13}
+\contentsline {paragraph}{Wiedergabesystem}{14}
 \contentsline {paragraph}{Versuchsinterface}{14}
 \contentsline {subsection}{\numberline {3.3}Ergebnis}{14}
 \contentsline {subsection}{\numberline {3.4}Diskussion}{15}

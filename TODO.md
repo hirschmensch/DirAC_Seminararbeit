@@ -7,8 +7,6 @@ TODO:
 
 - Schreibfehler ausbessern
 
-- Quellen der Bilder angeben
-
 - Titelblatt: iem-logo überschneidet sich mit Schrift
 
 - DirAC Repo: Teilnehmer anonymisieren (Namen, Dateinamen)
