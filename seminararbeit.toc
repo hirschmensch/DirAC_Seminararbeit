@@ -1,26 +1,26 @@
 \babel@toc {french}{}
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Einleitung}{4}% 
-\contentsline {section}{\numberline {2}DirAC}{4}% 
-\contentsline {subsection}{\numberline {2.1}Annahmen aus der Psychoakustik}{4}% 
-\contentsline {subsection}{\numberline {2.2}Funktionsweise}{5}% 
-\contentsline {paragraph}{Allgemein}{5}% 
-\contentsline {subsection}{\numberline {2.3}Implementierung}{6}% 
-\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{7}% 
-\contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{8}% 
-\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{9}% 
-\contentsline {paragraph}{Resynthese}{9}% 
-\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}% 
-\contentsline {paragraph}{Random Phase}{10}% 
-\contentsline {paragraph}{Feedback Delay Network}{10}% 
-\contentsline {paragraph}{Widening}{11}% 
-\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{11}% 
-\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{11}% 
-\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{12}% 
-\contentsline {paragraph}{Ausgangssignale}{12}% 
-\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{12}% 
-\contentsline {paragraph}{Wiedergabesystem}{13}% 
-\contentsline {paragraph}{Versuchsinterface}{13}% 
-\contentsline {subsection}{\numberline {3.3}Ergebnis}{14}% 
-\contentsline {subsection}{\numberline {3.4}Diskussion}{14}% 
-\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{15}% 
+\contentsline {section}{\numberline {1}Einleitung}{4}
+\contentsline {section}{\numberline {2}DirAC}{4}
+\contentsline {subsection}{\numberline {2.1}Annahmen aus der Psychoakustik}{4}
+\contentsline {subsection}{\numberline {2.2}Funktionsweise}{5}
+\contentsline {paragraph}{Allgemein}{5}
+\contentsline {subsection}{\numberline {2.3}Implementierung}{7}
+\contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{7}
+\contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{8}
+\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{9}
+\contentsline {paragraph}{Resynthese}{10}
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}
+\contentsline {paragraph}{Random Phase}{10}
+\contentsline {paragraph}{Feedback Delay Network}{10}
+\contentsline {paragraph}{Widening}{11}
+\contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{11}
+\contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{12}
+\contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{12}
+\contentsline {paragraph}{Ausgangssignale}{12}
+\contentsline {paragraph}{Verglichene Kombinationen von Dekorrelation und Dekodierung}{13}
+\contentsline {paragraph}{Wiedergabesystem}{13}
+\contentsline {paragraph}{Versuchsinterface}{14}
+\contentsline {subsection}{\numberline {3.3}Ergebnis}{14}
+\contentsline {subsection}{\numberline {3.4}Diskussion}{15}
+\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{15}
