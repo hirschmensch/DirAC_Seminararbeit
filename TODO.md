@@ -1,9 +1,7 @@
 TODO:
 =====
 
-- Daten mit Tab als Trennzeichen erstellen (Manuel) -> auf git stellen
-
-- Latex Tabelle aus Daten erstellen -> in den Anhang
+- Latex Tabelle aus Daten erstellen -> in den Anhang (Michael)
 
 - Anhang: Code(verbose) einfügen (Manuel)
 
