@@ -1,5 +1,12 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage{iem} %enthaelt viele nuetzliche usepackages und definiert 
+\usepackage{iem} %enthaelt viele nuetzliche usepackages und definiert
+\usepackage{listings} %source code listings
+\lstset{
+        language=Matlab,
+        numbers=left,
+        breaklines=true
+}
+
 % ein paar Reformatierungen
 \hyphenation{}
 
@@ -89,6 +96,12 @@ Generell kann der Hörversuch in die folgende vier Komponenten des Aufbaues und 
 
 \bibliographystyle{IEEEtranSA}
 \bibliography{bib_database}
+
+\appendix
+\section{Anhang: Code}
+dirac.m:
+\lstinputlisting[language=Matlab]{code/dirac.m}
+
 
 \end{document}
 
