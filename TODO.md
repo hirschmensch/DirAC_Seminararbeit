@@ -7,8 +7,6 @@ TODO:
 
 - Eigenen Text noch einmal durchgehen und schlecht formulierte Teile verbessern
 
-- Zusammenfassung schreiben (Manuel)
-
 - Abstract übersetzen (Michael)
 
 - Literaturquellen angeben (Zitate) (Manuel)
