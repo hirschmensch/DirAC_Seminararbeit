@@ -23,5 +23,5 @@
 \contentsline {paragraph}{Versuchsinterface}{14}
 \contentsline {subsection}{\numberline {3.3}Ergebnis}{14}
 \contentsline {subsection}{\numberline {3.4}Diskussion}{15}
-\contentsline {section}{\numberline {4}Zusammenfassung und Ausblick}{15}
-\contentsline {section}{\numberline {A}Anhang: Code}{15}
+\contentsline {section}{\numberline {4}Fazit}{15}
+\contentsline {section}{\numberline {A}Anhang: Code}{16}
