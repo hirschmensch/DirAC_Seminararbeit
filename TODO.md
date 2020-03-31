@@ -1,15 +1,11 @@
 TODO:
 =====
 
-- Latex Tabelle aus Daten erstellen -> in den Anhang (Michael)
-
 - LS-Anordnung Grafik (Michael)
 
 - Eigenen Text noch einmal durchgehen und schlecht formulierte Teile verbessern
 
 - Abstract übersetzen (Michael)
-
-- Literaturquellen angeben (Zitate) (Manuel)
 
 - Schreibfehler ausbessern
 
