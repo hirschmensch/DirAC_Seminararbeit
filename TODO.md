@@ -3,8 +3,6 @@ TODO:
 
 - Latex Tabelle aus Daten erstellen -> in den Anhang (Michael)
 
-- Anhang: Code(verbose) einfügen (Manuel)
-
 - LS-Anordnung Grafik (Michael)
 
 - Eigenen Text noch einmal durchgehen und schlecht formulierte Teile verbessern
