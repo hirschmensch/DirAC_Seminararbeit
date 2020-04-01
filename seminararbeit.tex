@@ -31,15 +31,15 @@
 \hspace{1cm}\vspace{1cm}
 
 \begin{abstract}
-   Diese Seminararbeit behandelt verschiedene Ausführungen und auch Optimierungen des DirAC-Verfahrens (Directional Audio Coding). Mit diesem Verfahren können Ambisonics Aufnahmen erster Ordnung in ihrer räumlichen Darstellung verbessert und auf eine höhrere Ordnung hochgerechnet werden.
+   Diese Seminararbeit behandelt verschiedene Ausführungen und auch Optimierungen des DirAC-Verfahrens (Directional Audio Coding). Mit diesem Verfahren können Ambisonics Aufnahmen erster Ordnung in ihrer räumlichen Darstellung verbessert und auf eine höhere Ordnung hochgerechnet werden.
    Da die Aufnahme in Ambisonics erster Ordnung mit Hilfe von Soundfield Mikrofonen sehr einfach und günstig durchgeführt werden kann, jedoch eine wenig überzeugende Darstellung von Räumlichkeit und Klang bietet, kann ein solches Upmixing die Wiedergabe in vielerlei Hinsicht verbessern.
-   Zu diesem Zweck sollen verschiedene von DirAC-Implementierungen untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
+   Zu diesem Zweck sollen verschiedene DirAC-Implementierungen untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
 \end{abstract}
 \selectlanguage{english}
 \begin{abstract}
    This seminar project examines various designs and optimizations of DirAC (Directional Audio Coding), which is used for upmixing of first-order ambisonics recordings, in order to enhance spatial resolution.
    While soundfield microphones represent a straightforward method for the creation of first-order ambisonics recordings on a budget, the spatial representation is rarely convincing, and upmixing to higher order ambisonics is the prevalent procedure for the correction of such deficiencies.
-   Hence, the goal of this project is to seek out the prime implementation of DirAC and compares it to other upmixing approaches, as well as to different implementations of the DirAC algorithm itself.
+   Hence, the goal of this project is to seek out the prime implementation of DirAC and to compare it to other upmixing approaches, as well as to different implementations of the DirAC algorithm itself.
 \end{abstract}
 \selectlanguage{ngerman}
 \newpage
@@ -53,9 +53,9 @@
 \input{einleitung.tex}
 
 \section{DirAC}
-In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC erläutert sowie die Implementierung in diesem Projekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-verfahrens untersucht, wobei sich diese einerseits durch Methode der Diffusitätssynthese und weiters auch durch zwei verschiedee Dekodierungsansätze verwenden. Die Methoden zur Synthese von Diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave ausprogrammiert wurde, auch bereits erhältliche Plugins wie ein Widening und ein FDN-Plugin aus der IEM Plugin-Suite. Die bei beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters die Dekodierung auf eine T-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
+In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC (Directional Audio Coding) erläutert sowie die Implementierung in diesem Projekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-Verfahrens untersucht, wobei sich diese einerseits durch die gewählte Methode der Diffusitätssynthese, und weiters auch durch zwei verschiedene Dekodierungsansätze unterscheiden. Die untersuchten Methoden zur Synthese von diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave ausprogrammiert wurde, auch bereits erhältliche Plugins wie ein Widening und ein FDN-Plugin aus der IEM Plugin Suite. Die beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters die Dekodierung auf eine T-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
 
-DirAC (Directional Audio Coding) ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinzidenzmikrofon-Anordnungen wie FOA (First Order Ambisonics). Das Ziel des Algorithmus ist eine Erhöhung der Lokalisationsschärfe bei gleichzeitiger Verbesserung der Qualität der räumlichen Wiedergabe.
+DirAC ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinzidenzmikrofon-Anordnungen wie FOA (First Order Ambisonics). Das Ziel des Algorithmus ist eine Erhöhung der Lokalisationsschärfe bei gleichzeitiger Verbesserung der Qualität der räumlichen Wiedergabe.
     \subsection{Annahmen aus der Psychoakustik} \label{annahmen}
     \input{annahmen/main.tex}
     \subsection{Funktionsweise}

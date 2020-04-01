@@ -9,7 +9,7 @@ In Abbildung \ref{fig:dirac_flow_general} ist das Prinzip des DirAC Algorithmus 
 
 \footnotetext{Quelle: \cite{pulkki}}
 
-Aus den $M$ Eingangskanälen werden mit virtuellen Mikrofonen die $N$ Ausgangskanäle gebildet (siehe Abbildung \ref{fig:dirac_flow_high}). Mit den ermittelten Eigenschaften werden die N Kanäle spektral in einen gerichteten Anteil und in einen Diffusanteil getrennt. Der gerichtete Anteil hat bereits eine höhere Auflösung als die Eingangskanäle. Der Diffusanteil wird mit einem Dekorrelationsverfahren zur Erhöhung der Diffusität dekorreliert (siehe \ref{dekorrelation}). Anschließend werden die beiden Signalanteile per Addition wieder zusammengebracht und via iSTFT wieder in den Zeitbereich transformiert.
+Aus den $M$ Eingangskanälen werden mit virtuellen Mikrofonen die $N$ Ausgangskanäle gebildet (siehe Abbildung \ref{fig:dirac_flow_high}). Mit den ermittelten Eigenschaften werden die $N$ Kanäle spektral in einen gerichteten Anteil und in einen Diffusanteil getrennt. Der gerichtete Anteil hat bereits eine höhere Auflösung als die Eingangskanäle. Der Diffusanteil wird mit einem Dekorrelationsverfahren zur Erhöhung der Diffusität bearbeitet (siehe \ref{dekorrelation}). Anschließend werden die beiden Signalanteile per Addition wieder zusammengebracht und via iSTFT wieder in den Zeitbereich transformiert.
 
 \begin{figure}[!ht]
   \centering
@@ -20,7 +20,7 @@ Aus den $M$ Eingangskanälen werden mit virtuellen Mikrofonen die $N$ Ausgangska
 
 \footnotetext{Quelle: \cite{pulkki}}
 
-In dieser Seminararbeit und dem Versuch wird ausschließlich diese Variante des DirAC-Algorithmus verwendet, der für eine hohe Audioqualität entwickelt wurde. In Abbildung \ref{fig:dirac_flow_low} ist eine andere Variante abgebildet, bei der die Signalübertragung eine größere Rolle spielt. Die Integralzeichen in den Abbildungen symbolisieren eine zeitliche Mittelung der Parameter zur Vermeidung von Artefakten.
+In dieser Seminararbeit (und dem Hörversuch) wird ausschließlich diese Variante des DirAC-Algorithmus verwendet, der für eine hohe Audioqualität entwickelt wurde. In Abbildung \ref{fig:dirac_flow_low} ist eine andere Variante abgebildet, bei der die Signalübertragung eine größere Rolle spielt. Die Integralzeichen in den Abbildungen symbolisieren eine zeitliche Mittelung der Parameter zur Vermeidung von Artefakten.
 
 \begin{figure}[!ht]
   \centering
