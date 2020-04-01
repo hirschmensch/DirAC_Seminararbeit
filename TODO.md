@@ -1,8 +1,6 @@
 TODO:
 =====
 
-- LS-Anordnung Grafik (Michael)
-
 - Eigenen Text noch einmal durchgehen und schlecht formulierte Teile verbessern
 
 - Schreibfehler ausbessern
