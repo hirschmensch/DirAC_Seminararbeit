@@ -51,13 +51,10 @@
 
 \section{Einleitung}
 \input{einleitung.tex}
-
 \section{DirAC}
 In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC (Directional Audio Coding) erläutert sowie die Implementierung in diesem Projekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-Verfahrens untersucht, wobei sich diese einerseits durch die gewählte Methode der Diffusitätssynthese, und weiters auch durch zwei verschiedene Dekodierungsansätze unterscheiden. Die untersuchten Methoden zur Synthese von diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave implementiert wurde, auch bereits erhältliche Plugins wie ein Widening und ein FDN-Plugin aus der IEM Plugin Suite. Die beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters die Dekodierung auf eine T-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
 
 DirAC ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinzidenzmikrofon-Anordnungen wie FOA (First Order Ambisonics). Das Ziel des Algorithmus ist eine Erhöhung der Lokalisationsschärfe bei gleichzeitiger Verbesserung der Qualität der räumlichen Wiedergabe.
-
-\newpage
 
     \subsection{Annahmen aus der Psychoakustik} \label{annahmen}
     \input{annahmen/main.tex}
@@ -79,6 +76,7 @@ DirAC ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinz
     \subsection{Dekorrelationsverfahren} \label{dekorrelation}
     \input{dekorrelation/main.tex}
 
+\newpage
 
 \section{Hörversuch}
 Die unterschiedlichen Upmixing- und Dekorrelationsalgorithmen, sowie die beiden Dekodierungsmethoden, wurden anschließend in einem Hörversuch auf die Probe gestellt. Hierzu wurden verschiedene FOA Aufnahmen im B-Format herangezogen und mit unterschiedlichen Kombinationen aus Upmixingmethoden, Dekorrelationsmethoden und Dekodierungsstrategien bearbeitet. Die Ergebnisse konnten dann direkt im Produktionsstudio des Instituts für elektronische Musik wiedergegeben und von Versuchspersonen bewertet werden. Das Augenmerk sollte dabei auf Klangqualität und Darstellung der Räumlichkeit liegen. Die folgenden Kapitel sollen die Annahmen, Hypothesen, den Aufbau und die Ergebnisse dieses Versuchs darstellen.
@@ -100,10 +98,10 @@ Generell kann der Hörversuch in die folgenden vier Komponenten des Aufbaues und
     \input{ergebnis/main.tex}
     \subsection{Diskussion}
     \input{diskussion/main.tex}
-
+\newpage
 \section{Fazit}
 \input{Fazit.tex}
-
+\newpage
 \bibliographystyle{IEEEtranSA}
 \bibliography{bib_database}
 
