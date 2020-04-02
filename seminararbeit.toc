@@ -11,7 +11,7 @@
 \contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{7}% 
 \contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{8}% 
 \contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{9}% 
-\contentsline {paragraph}{Resynthese}{10}% 
+\contentsline {paragraph}{Resynthese}{9}% 
 \contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}% 
 \contentsline {paragraph}{Random Phase}{10}% 
 \contentsline {paragraph}{Feedback Delay Network}{10}% 

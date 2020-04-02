@@ -1,5 +1,5 @@
 \paragraph{Ausgangssignale}
-Es wurden insgesamt vier unterschiedliche Aufnahmen als Testsignale herangezogen. Dabei wurden auch zwei Aufnahmen im B-Format synthetisch erzeugt, um auch sehr gerichtete Signale vergleichen zu können:
+Es wurden insgesamt vier unterschiedliche Aufnahmen als Testsignale herangezogen. Davon wurden zwei Aufnahmen im B-Format synthetisch erzeugt, um auch sehr gerichtete Signale vergleichen zu können:
 
 \begin{itemize}
 	\item Synthetisches Zirpen, rotierend in Azimuth
@@ -8,7 +8,9 @@ Es wurden insgesamt vier unterschiedliche Aufnahmen als Testsignale herangezogen
 	\item Umgebungsgeräusche Straßenkreuzung
 \end{itemize}
 
-Die synthetischen Signale wurden dabei mit Hilfe eines weiteren Skriptes in Octave erzeugt. Das zusätzlich verhallte Signal wurde nachträglich in Reaper mit dem FDN Reverb Plugin aus der IEM Plugin Suite bearbeitet. Dies soll einfach einen direkteren Vergleich der Performance zwischen stark gerichtetem und stark diffusem Signal bieten. Die Live-Musik Aufnahme wurde im Cube angefertigt und bietet eine große Räumlichkeit, wobei die Ambience-Aufnahme an einer Straßenkreuzung hier die größte Diffusität aufweist. Diese Aufnahmen wurden mit Soundfield Mikrofonen durchgeführt. Somit werden im Hörversuch vier sehr unterschiedliche Aufnahmeszenarien verglichen.
+Die synthetischen Signale wurden dabei mit Hilfe eines weiteren Skriptes in Octave produziert. Das zusätzlich verhallte Signal wurde in Reaper mit dem FDN Reverb Plugin aus der IEM Plugin Suite \protect\footnotemark nachträglich bearbeitet. Dies soll einfach einen direkteren Vergleich der Performance von stark gerichtetem und stark diffusem Signal bieten. Die Live-Musik Aufnahme wurde im Cube angefertigt und hat daher eine große Räumlichkeit, wobei die Ambience-Aufnahme an einer Straßenkreuzung wiederum die größte Diffusität aufweist. Diese Aufnahmen wurden mit Soundfield Mikrofonen durchgeführt. Somit werden im Hörversuch vier sehr unterschiedliche Aufnahmeszenarien verwendet.
+
+\footnotetext{IEM Plugin Suite: $https://plugins.iem.at/$}
 
 \paragraph{Verglichene Kombinationen von Dekorrelation und Dekodierung}
 
@@ -19,9 +21,12 @@ Die folgende Liste zeigt die verglichenen Kombinationen aus Upmixing-, Dekorrela
 	\item DirAC, 12 Speaker + FDN Decorrelation
 	\item DirAC, t-Design + FDN Decorrelation
 	\item DirAC, t-Design + Widening Plugin
-	\item Harpex
-	\item Compass
+	\item Harpex \protect\footnotemark
+	\item Compass \protect\footnotemark
 \end{itemize}
+
+\footnotetext{Harpex: $https://harpex.net/index.html$}
+\footnotetext{Compass: $http://research.spa.aalto.fi/projects/compass_vsts/plugins.html$}
 
 Abbildung ~\ref{fig:algos} ist eine schematische Darstellung der Wiedergabe der Testsignale. Die Wiedergabe ist grundsätzlich immer eine Kombination aus vorhergehender Erzeugung und Bearbeitung in einem Octave-Skript, und Wiedergabe und Bearbeitung in Reaper mittels Plugins.
 
@@ -35,7 +40,7 @@ Abbildung ~\ref{fig:algos} ist eine schematische Darstellung der Wiedergabe der 
 Die Dekodierung der ambisonischen Signale wird für alle Signale in Octave durchgeführt. Nach dem DirAC-Upmixing wird die Dekodierung entweder auf die 12-Speaker-Anordnung des Produktionsstudios, oder allgemein für ein 9-Design ausgeführt. Daher können die 12-Speaker-dekodierten Signale in Reaper anschließend direkt auf die Lautsprecher ausgerichtet wiedergegeben werden, und das t-Design-Signal wird zuvor noch mit einem Dekodierungsplugin auf die Lautsprecher aufgeteilt.
 
 \paragraph{Wiedergabesystem}
-Als Wiedergabesytem wurde die Lautsprecheranordnung des Produktionsstudios des IEM verwendet. Prinzipiell besteht die Lautsprecheranordnung im Produktionsstudio aus zwei überinander liegenden Ringen in horizontaler Lage, und einem Zenit-Lautsprecher. Es werden insgesamt 12 Lautsprecher verwendet, jedoch befinden sich keine Lautsprecher in vertikaler Richtung unter dem Horizont. Eine Visualisierung der Lautsprecheranordnung ist in Abb. ~\ref{fig:aufb:prodstud} dargestellt. Der Nadir-Lautsprecher in der Abbildung ist eine imaginäre Schallquelle um Signale unter dem Horizont auf andere Lautsprecher zu verteilen.
+Als Wiedergabesytem wurde die Lautsprecheranordnung des Produktionsstudios des IEM verwendet. Prinzipiell besteht die Lautsprecheranordnung im Produktionsstudio aus zwei übereinander liegenden Ringen in horizontaler Lage, und einem Zenit-Lautsprecher. Es werden insgesamt 12 Lautsprecher verwendet, jedoch befinden sich keine Lautsprecher in vertikaler Richtung unter dem Horizont. Eine Visualisierung der Lautsprecheranordnung ist in Abb. ~\ref{fig:aufb:prodstud} dargestellt. Der Nadir-Lautsprecher in der Abbildung ist eine imaginäre Schallquelle um Signale unter dem Horizont auf andere Lautsprecher zu verteilen.
 
 \begin{figure}[!ht]
   \centering
