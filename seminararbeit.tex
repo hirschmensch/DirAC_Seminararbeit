@@ -1,0 +1,133 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{iem} %enthaelt viele nuetzliche usepackages und definiert
+\usepackage{listings} %source code listings
+\lstset{
+        language=Matlab,
+        numbers=left,
+        breaklines=true
+}
+
+% ein paar Reformatierungen
+\hyphenation{}
+
+\begin{document}
+\selectlanguage{ngerman}
+
+\title{Untersuchung verschiedener Upmixingmethoden für DirAC}
+
+\author{Manuel Planton, BSc \\ Michael Hirschmugl, BSc\\\\\small{Betreuung: Dr. Franz Zotter, Dr. Matthias Frank}}
+
+\markboth{}{M. Planton, M. Hirschmugl: DirAC Upmixing}
+
+\doctype{Seminararbeit aus Algorithmen in Akustik und Computermusik 2}
+
+\date{WS 2019/2020}
+
+\maketitle
+\newpage
+\pagestyle{empty}
+\hspace{1cm}\vspace{3cm}
+
+\hspace{1cm}\vspace{1cm}
+
+\begin{abstract}
+   Diese Seminararbeit behandelt verschiedene Ausführungen und auch Optimierungen des DirAC-Verfahrens (Directional Audio Coding). Mit diesem Verfahren können Ambisonics Aufnahmen erster Ordnung in ihrer räumlichen Darstellung verbessert und auf eine höhere Ordnung hochgerechnet werden.
+   Da die Aufnahme in Ambisonics erster Ordnung mit Hilfe von Soundfield Mikrofonen sehr einfach und günstig durchgeführt werden kann, jedoch eine wenig überzeugende Darstellung von Räumlichkeit und Klang bietet, kann ein solches Upmixing die Wiedergabe in vielerlei Hinsicht verbessern.
+   Zu diesem Zweck sollen verschiedene DirAC-Implementierungen untereinander, und auch mit kommerziellen Plugins verglichen werden. Somit wird in dieser Seminararbeit die optimale Realisierung mit dem größten klanglichen Vorteil gesucht.
+\end{abstract}
+\selectlanguage{english}
+\begin{abstract}
+   This seminar project examines various designs and optimizations of DirAC (Directional Audio Coding), which is used for upmixing of first-order ambisonics recordings, in order to enhance spatial resolution.
+   While soundfield microphones represent a straightforward method for the creation of first-order ambisonics recordings on a budget, the spatial representation is rarely convincing, and upmixing to higher order ambisonics is the prevalent procedure for the correction of such deficiencies.
+   Hence, the goal of this project is to seek out the prime implementation of DirAC and to compare it to other upmixing approaches, as well as to different implementations of the DirAC algorithm itself.
+\end{abstract}
+\selectlanguage{ngerman}
+\newpage
+\pagestyle{myheadings}
+\hspace{1cm}\vspace{2cm}
+
+\tableofcontents
+\newpage
+
+\section{Einleitung}
+\input{einleitung.tex}
+\section{DirAC}
+<<<<<<< HEAD
+In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC (Directional Audio Coding) erläutert, sowie die Implementierung für dieses Seminarprojekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-Verfahrens untersucht, wobei sich diese einerseits durch die gewählte Methode der Diffusitätssynthese, und weiters auch durch zwei verschiedene Dekodierungsansätze unterscheiden. Die untersuchten Methoden zur Synthese von diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave implementiert wurde, auch bereits erhältliche Plugins wie ein Widening- und ein FDN-Plugin aus der IEM Plugin Suite. Die beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters aus der Dekodierung auf eine t-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
+=======
+In diesem Kapitel wird die prinzipielle Funktionsweise von DirAC (Directional Audio Coding) erläutert sowie die Implementierung in diesem Projekt beschrieben. Im Hörversuch wurden jedoch unterschiedliche Implementierungen des DirAC-Verfahrens untersucht, wobei sich diese einerseits durch die gewählte Methode der Diffusitätssynthese, und weiters auch durch zwei verschiedene Dekodierungsansätze unterscheiden. Die untersuchten Methoden zur Synthese von diffusen Audiosignalen umfassen neben einem Random-Phase-Algorithmus, welcher direkt in Octave implementiert wurde, auch bereits erhältliche Plugins wie ein Widening und ein FDN-Plugin aus der IEM Plugin Suite. Die beiden Ansätze zur Dekodierung von Ambisonics auf Lautsprechersignale bestehen einerseits aus einer direkten Dekodierung auf die abgezielte Lautsprecheranordnung, und weiters die Dekodierung auf eine t-Design Lautersprecheranordnung, welche eine größere Flexibilität bei der Wiedergabe bieten soll.
+>>>>>>> 71fec2a64f16e33b70dfa0b45948c25d259e5ca9
+
+DirAC ist ein Algorithmus von Ville Pulkki \cite{pulkki} zum Upmixing für Koinzidenzmikrofon-Anordnungen wie FOA (First Order Ambisonics). Das Ziel des Algorithmus ist eine Erhöhung der Lokalisationsschärfe bei gleichzeitiger Verbesserung der Qualität der räumlichen Wiedergabe.
+
+\newpage
+
+    \subsection{Annahmen aus der Psychoakustik} \label{annahmen}
+    \input{annahmen/main.tex}
+    \subsection{Funktionsweise}
+    \input{funktionsweise/main.tex}
+        \paragraph{Allgemein}
+        \input{funktionsweise/allgemein.tex}
+    \subsection{Implementierung}
+    \input{implementierung/main.tex}
+        \paragraph{Analyse von Richtungs- und Diffusanteil}
+        \input{implementierung/analyse.tex}
+        \paragraph{Upmixing auf Lautsprecherandordnung}
+        \input{implementierung/upmixing.tex}
+        \paragraph{Trennung von Diffus- und Richtungsanteil}
+        \input{implementierung/trennung.tex}
+        \paragraph{Resynthese}
+        \input{implementierung/resynthese.tex}
+
+    \subsection{Dekorrelationsverfahren} \label{dekorrelation}
+    \input{dekorrelation/main.tex}
+
+\newpage
+
+\section{Hörversuch}
+Die unterschiedlichen Upmixing- und Dekorrelationsalgorithmen, sowie die beiden Dekodierungsmethoden, wurden anschließend in einem Hörversuch auf die Probe gestellt. Hierzu wurden verschiedene FOA Aufnahmen im B-Format herangezogen und mit unterschiedlichen Kombinationen aus Upmixingmethoden, Dekorrelationsmethoden und Dekodierungsstrategien bearbeitet. Die Ergebnisse konnten dann direkt im Produktionsstudio des Instituts für elektronische Musik wiedergegeben und von Versuchspersonen bewertet werden. Das Augenmerk sollte dabei auf Klangqualität und Darstellung der Räumlichkeit liegen. Die folgenden Kapitel sollen die Annahmen, Hypothesen, den Aufbau und die Ergebnisse dieses Versuchs darstellen.
+
+Generell kann der Hörversuch in die folgenden vier Komponenten des Aufbaues und Versuchsdesigns zerlegt werden, welche anschließend im Kapitel \ref{aufbau_und_konzept} genauer erläutert werden:
+\begin{itemize}
+    \item Reaper Projekt gesteuert durch Mushra-Test
+    \item Vergleich von 6 Algorithmen + Referenz
+    \item Ausgehend von 4 verglichenen Testsignalen
+    \item Bewertung von Klangqualität und Räumlichkeit
+\end{itemize}
+
+    \subsection{Ziele des Hörversuchs}
+    \input{ziele_hoerversuch/main.tex}
+    \subsection{Aufbau und Konzept}
+    \label{aufbau_und_konzept}
+    \input{aufbau/main.tex}
+    \subsection{Ergebnis}
+    \input{ergebnis/main.tex}
+    \subsection{Diskussion}
+    \input{diskussion/main.tex}
+\newpage
+\section{Fazit}
+\input{Fazit.tex}
+\newpage
+\bibliographystyle{IEEEtranSA}
+\bibliography{bib_database}
+
+\newpage
+\appendix
+
+\newpage
+
+\section{Anhang: Ergebnisse des Hörversuchs}
+\input{sound_quality.tex}
+\input{room_quality.tex}
+Scenes:
+\begin{itemize}
+    \item 1: Synthetisches Zirpen, rotierend in Azimuth
+    \item 2: Synthetisches Zirpen, rotierend in Azimuth, nachträglich verhallt
+    \item 3: Live-Musik Aufnahme
+    \item 4: Umgebungsgeräusche Straßenkreuzung
+\end{itemize}
+
+\end{document}
+
+
+
