@@ -8,15 +8,15 @@
 \contentsline {subsection}{\numberline {2.2}Funktionsweise}{6}% 
 \contentsline {paragraph}{Allgemein}{6}% 
 \contentsline {subsection}{\numberline {2.3}Implementierung}{7}% 
-\contentsline {paragraph}{\IeC {\"U}bersicht}{8}% 
+\contentsline {paragraph}{\IeC {\"U}bersicht}{7}% 
 \contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{8}% 
 \contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{9}% 
 \contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{10}% 
 \contentsline {paragraph}{Resynthese}{10}% 
-\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{11}% 
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}% 
 \contentsline {paragraph}{Random Phase}{11}% 
 \contentsline {paragraph}{Feedback Delay Network}{11}% 
-\contentsline {paragraph}{Widening}{11}% 
+\contentsline {paragraph}{Widening}{12}% 
 \contentsline {section}{\numberline {3}H\IeC {\"o}rversuch}{13}% 
 \contentsline {subsection}{\numberline {3.1}Ziele des H\IeC {\"o}rversuchs}{13}% 
 \contentsline {subsection}{\numberline {3.2}Aufbau und Konzept}{14}% 
