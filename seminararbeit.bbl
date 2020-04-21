@@ -31,11 +31,6 @@ A.~P. Leo~McCormack, ``Sparta and compass: Real-time implementations of linear
   and parametric spatial audio reproduction and processing methods,''
   \emph{AES}, 2019.
 
-\bibitem[MG16]{seminar2016}
-B.~S. Maximilian~Giller, ``Seminararbeit: Dirac implementierung und
-  experimentelle bestimung der optimalen zeit- und frequenzauflösung,'' IEM,
-  2016.
-
 \bibitem[Pul07]{pulkki}
 V.~Pulkki, ``Spatial sound reproduction with directional audio coding,''
   \emph{Laboratory of Acoustics and Audio Signal Processing, Helsinki
@@ -49,11 +44,6 @@ N.~B. Svein~Berge, ``High angular resolution planewave expansion,'' \emph{Proc.
 \bibitem[SB10b]{harpy}
 ------, ``A new method for b-format to binaural transcoding,'' \emph{AES 40th
   international conference, Tokyo, Japan, October 8–10, 2010}, 2010.
-
-\bibitem[Smi]{fdn_smith}
-J.~O. Smith, ``Feedback delay networks (fdn),'' \url
-  https://ccrma.stanford.edu/~jos/pasp/Feedback_Delay_Networks_FDN.html,
-  accessed: 2020-03-31.
 
 \bibitem[VP17]{spatial-book}
 A.~P. Ville~Pulkki, Symeon Delikaris-Manias, \emph{Parametric Time-Frequency

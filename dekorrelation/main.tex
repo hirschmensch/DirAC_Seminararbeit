@@ -8,32 +8,31 @@ Bei diesem Verfahren wird das Diffussignal mit weißem Rauschen gefaltet. Dabei 
 
 \paragraph{Feedback Delay Network}
 
-In Abbildung ~\ref{fig:fdn} ist ein Feedback Delay Network (FDN) für drei Signale zu sehen. Die Eingangssignale werden mit Delays zeitverzögert, deren Länge $M_i$ Primzahlverhältnisse haben sollten, um ausgeprägte Resonanzen zu vermeiden.
+In Abbildung ~\ref{fig:fdn} ist ein Feedback Delay Network (FDN) zu sehen. Die Eingangssignale werden mit Delays zeitverzögert, deren Länge $\tau_i$ Primzahlverhältnisse haben sollten, um ausgeprägte Resonanzen zu vermeiden.
 
-Die verzögerten Eingangssignale werden anschließend über eine Mischungsmatrix (Glg. ~\ref{eq:mischmat}) zurückgeführt, um eine möglichst randomisierte Durchmischung zu erreichen.
+Die verzögerten Eingangssignale werden gefiltert ($g_{lo}^{\tau_i}$, $g_{mi}^{\tau_i}$, $g_{hi}^{\tau_i}$), um die natürlich klingende höhere Dämpfung bei hohen Frequenzen zu erreichen und anschließend über eine Mischungsmatrix (Glg. ~\ref{eq:mischmat}) zurückgeführt, um eine möglichst randomisierte Durchmischung zu erreichen.
 
 \begin{equation}
-    Q = 
+    A = 
     \begin{pmatrix}
-		q_{11} & q_{12} & q_{13} \\
-        q_{21} & q_{22} & q_{23} \\
-        q_{31} & q_{32} & q_{33} \\
+		a_{11} & a_{12} & a_{13} \\
+        a_{21} & a_{22} & a_{23} \\
+        a_{31} & a_{32} & a_{33} \\
     \end{pmatrix}
     \label{eq:mischmat}
 \end{equation}
 
-Die gemischten Signale werden noch mit den Verstärkungsfaktoren $g_i$ multipliziert und schließlich zu den Eingangssignalen addiert. Das Verhalten des FDN hängt maßgeblich von den Delay-Längen $M_i$ und von den Eigenschaften der Mischungsmatrix $Q$ ab.
+Die gemischten Signale werden schließlich zu den Eingangssignalen rückgeführt. Das Verhalten des FDN hängt maßgeblich von den Delay-Längen $\tau_i$ und von den Eigenschaften der Mischungsmatrix $A$ ab.
 
 Prinzipiell eignet sich ein FDN gut zur Simulation von späten Reflexionen. In diesem Versuch wurden sehr kurze Nachhallzeiten verwendet, um die Diffusität der Signale zu erhöhen, ohne den Eindruck eines zusätzlichen Raumes durch das FDN zu verursachen.
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.9\textwidth]{dekorrelation/pic/FDN_smith.png}
-  \caption{Feedback Delay Network für 3 Signale (Smith) \protect\footnotemark }
+  \includegraphics[width=0.7\textwidth]{dekorrelation/pic/zotter_fdn.png}
+  \caption{Feedback Delay Network aus \cite{ambi-book}}
   \label{fig:fdn}
 \end{figure}
 
-\footnotetext{Quelle: \cite{fdn_smith}}
 
 \paragraph{Widening}
 Der Widening-Effekt wird durch frequenzabhängiges Panning um die Panning-Richtung erzeugt \cite{ambi-book}. Dabei werden aufeinanderfolgende Frequenzanteile in der Richtung leicht versetzt. Es kommt auch zu einer Verschmierung der zeitlichen Feinstruktur des Signals. Dieser Effekt wird als Erhöhung der Distanz und Diffusität wahrgenommen und kann zur Simulation von frühen, lateralen Reflexionen verwendet werden.
