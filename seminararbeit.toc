@@ -26,5 +26,5 @@
 \contentsline {paragraph}{Versuchsinterface}{15}
 \contentsline {subsection}{\numberline {3.3}Ergebnis}{16}
 \contentsline {subsection}{\numberline {3.4}Diskussion}{17}
-\contentsline {section}{\numberline {4}Fazit}{18}
-\contentsline {section}{\numberline {A}Anhang: Ergebnisse des H\IeC {\"o}rversuchs}{20}
+\contentsline {section}{\numberline {4}Fazit}{19}
+\contentsline {section}{\numberline {A}Anhang: Ergebnisse des H\IeC {\"o}rversuchs}{21}
