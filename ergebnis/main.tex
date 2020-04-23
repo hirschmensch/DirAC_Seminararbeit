@@ -14,11 +14,14 @@ Die Bewertungen erfolgten nach zwei Kriterien:
   \item räumliche Qualität: \textit{realistisch} (1) bis \textit{synthetisch} (0).
 \end{itemize}
 
-Die Bewertungen nach den zwei gewählten Kriterien weisen eine hohe Korrelation auf (siehe Abb. \ref{fig:p-value}). Dies deutet entweder auf eine tatsächliche Korrelation von Klangqualität und räumlicher Wiedergabequalität hin, oder die Fragestellung zielt nicht auf genügend unterschiedliche Aspekte der Testsignale ab. Dabei können stärkere Artefakte als Verminderung der räumlichen Qualität des Algorithmus gedeutet werden.
+Die Bewertungen nach den zwei gewählten Kriterien weisen eine teils hohe Korrelation auf (siehe Tab. \ref{tab:corr}). Dies deutet entweder auf eine tatsächliche Korrelation von Klangqualität und räumlicher Wiedergabequalität hin, oder die Fragestellung zielt nicht auf genügend unterschiedliche Aspekte der Testsignale ab. Dabei können stärkere Artefakte als Verminderung der räumlichen Qualität des Algorithmus gedeutet werden.
 
-\begin{figure}[!ht]
-  \centering
-  \includegraphics[width=1\textwidth]{ergebnis/plots/Raum_und_Klang_Zusammenhang_for_t-test.eps}
-  \caption{p-Wert und Korrelationskoeffizient zum Vergleich der zwei Kriterien}
-  \label{fig:p-value}
-\end{figure}
+\begin{table}
+\resizebox{\textwidth}{!}{%
+  \begin{tabular}{c|c|c|c|c|c|c}
+    Spkr\_Octave\_Decorr & Spkr\_FDN & t-design\_FDN & t-design\_Widening & HARPEX & COMPASS & FOA\_Referenz \\ \cline{1-7}
+    0.44 & -0.01 & 0.58 & 0.28 & 0.42 & 0.15 & 0.45 \\
+  \end{tabular}}
+\caption{Korrelationskoeffizient der zwei bewerteten Kriterien}
+\label{tab:corr}
+\end{table}
