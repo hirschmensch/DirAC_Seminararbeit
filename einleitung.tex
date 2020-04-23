@@ -1,11 +1,24 @@
-Räumliche Klangfeldaufzeichnungen in Ambisonics 1. Ordnung sind grundsätzlich vergleichsweise einfach und günstig zu realisieren. Mit der ambisonischen Ordnung steigen jedoch auch unterschiedliche Qualitätsmerkmale der einhüllenden Wiedergabe. Dazu zählen die Sweet-Area (der günstige Abhörbereich), die Klangqualität, sowie die räumliche Auflösung der Schallrichtungen \cite{ambi-book}. Es existieren bereits einige Verfahren in Theorie und Praxis, um Ambisonics 1. Ordnung in eine höhere Ordnung zu rechnen. Prinzipiell werden solche Verfahren unter dem englischen Begriff ``Upmixing'' zusammengefasst.
+Ambisonics Aufnahmen 1. Ordnung (FOA: first order ambsiconics) können einfach und günstig realisiert werden. 
+Die Verwendung einer höheren Ambisonics Ordnung führt jedoch zu einer besseren Lausprecherwiedergabe des aufgenommenen Schallfeldes.
+Die größe der Sweet-Area (der günstige Abhörbereich), sowie die räumliche Auflösung erhöhen sich dabei und Diffusschall kann besser wiedergegeben werden \cite{ambi-book}.
+Es existieren einige Verfahren, um die Ordnung von FOA Aufnahmen zu erhöhen.
+Allgemein werden diese als ``Upmixing'' Verfahren bezeichnet.
 
 V. Pulkki hat mit DirAC (Directional Audio Coding) \cite{pulkki} einen Algorithmus vorgeschlagen, der zuallererst die Trennung von gerichteten und diffusen Schallanteilen in B-Format Signalen zum Ziel hat. Weiters können gerichtete Schallereignisse anschließend auf eine beliebige Lautsprecheranordnung dekodiert werden \cite{spatial-book}, und somit ist auch Upmixing möglich.
 
 Das kommerzielle Plugin HARPEX von S. Berge und N. Barrett stellt eine weitere Möglichkeit dar. Die Funktionsweise beruht hier auf der Kombination von parametrischen und linearen Dekodierungsverfahren \cite{harpy2} und basiert stark auf einem Transkodierungsverfahren von 1. Ordnung Ambisonics zu binauralen Signalen \cite{harpy}. Einen ähnlichen Ansatz verfolgen die COMPASS-Plugins von L. McCormack und A. Politis \cite{compy}, welche wiederum frei verfügbar sind.
 
-Für Upmixing stehen daher theoretisch einige Methoden zur Verfügung, welche allerdings ausschlaggebende Qualitätsunterschiede an den Tag legen. Speziell DirAC unterscheidet sich bereits in den Realisierungsvarianten sehr stark, was die Synthese des dekorrelierten Diffusfeldes betrifft. Auch ist bisher unklar, ob die Dekodierung in ambisonisches B-Format höherer Ordnung grundsätzlich differenzierbar zur direkten Dekodierung auf die wiedergebende Lautsprecheranordnung bewertet wird.
+Für Upmixing stehen daher einige Methoden zur Verfügung, welche gewisse Qualitätsunterschiede haben.
+Speziell unterscheiden sich die verschiedenen Implementierungen des DirAC-Algorithmus mit unterschiedlicher Diffusschall-Synthese.
+Hier stellt sich die Frage, wie diese Algorithmen im Vergleich bewertet werden.
 
-In dieser Seminararbeit werden verschiedene Implementierungen des DirAC-Algorithmus und die erwähnten Plugins untereinander verglichen. Hierzu wird im Abschnitt 2 die Theorie zu DirAC erläutert. Ausgehend von einer psychoakustischen Annahme wird die allgemeine Funktionsweise des Algorithmus, sowie die spezielle Funktionsweise der DirAC-Implementierungen für diesen Versuch erklärt. Der Abschnitt schließt mit einem Überblick der verwendeten Dekorrelationsverfahren.
+Weiters erfolgt die Dekodierung entweder direkt im Upmixing-Algorithmus auf die physische Lautsprecheranordnung oder zuerst allgemein auf ein B-Format höherer Ordnung und anschließend auf die physische Lautsprecheranordnung.
+Die unterschiedlichen Dekodierungsverfahren könnten Einfluss auf die Wiedergabequalität haben.
 
-Die Evaluierung erfolgt in einem Hörversuch. Abschnitt 3 beschäftigt sich mit den Zielen, dem Aufbau und mit dem Konzept dieses Hörversuchs, dessen Ergebnisse schließlich präsentiert und diskutiert werden.
+In dieser Seminararbeit werden verschiedene Implementierungen des DirAC-Algorithmus entwickelt.
+Mit einem Hörversuch wurden diese und die weiteren erwähnten Verfahren bewertet.
+Hierzu wird im Abschnitt 2 die Theorie zu DirAC erläutert.
+Ausgehend von einer psychoakustischen Annahme wird die allgemeine Funktionsweise des Algorithmus, sowie die spezielle Funktionsweise der DirAC-Implementierungen für diesen Versuch erklärt.
+Der Abschnitt schließt mit einem Überblick der verwendeten Dekorrelationsverfahren.
+
+Abschnitt 3 beschäftigt sich mit den Zielen, dem Aufbau und mit dem Konzept des Hörversuchs, dessen Ergebnisse schließlich präsentiert und diskutiert werden.
