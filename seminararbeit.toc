@@ -3,7 +3,7 @@
 \babel@toc {english}{}
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Einleitung}{4}% 
-\contentsline {section}{\numberline {2}DirAC}{4}% 
+\contentsline {section}{\numberline {2}DirAC}{5}% 
 \contentsline {subsection}{\numberline {2.1}Annahmen aus der Psychoakustik}{6}% 
 \contentsline {subsection}{\numberline {2.2}Funktionsweise}{6}% 
 \contentsline {paragraph}{Allgemein}{6}% 
@@ -13,7 +13,7 @@
 \contentsline {paragraph}{Upmixing auf Lautsprecherandordnung}{9}% 
 \contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{10}% 
 \contentsline {paragraph}{Resynthese}{10}% 
-\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}% 
+\contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{11}% 
 \contentsline {paragraph}{Random Phase}{11}% 
 \contentsline {paragraph}{Feedback Delay Network}{11}% 
 \contentsline {paragraph}{Widening}{11}% 
