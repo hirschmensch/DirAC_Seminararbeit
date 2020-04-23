@@ -11,7 +11,7 @@ Es wurden insgesamt vier unterschiedliche Aufnahmen als Testsignale herangezogen
 	  \item Cello
 	  \item Piano
 	\end{itemize}
-	\item Umgebungsgeräusche Straßenkreuzung
+	\item Umgebungsgeräusche Straßenkreuzung (Ambience)
 \end{itemize}
 
 Die synthetischen Signale wurden dabei mit Hilfe eines weiteren Skriptes in GNU Octave produziert. Das zusätzlich verhallte Signal wurde in Reaper mit dem FDN Reverb Plugin aus der IEM Plugin Suite\footnote{IEM Plugin Suite: \url{https://plugins.iem.at/}} nachträglich bearbeitet. Dies soll einen direkteren Vergleich der Performance von stark gerichtetem und stark diffusem Signal bieten. Die Live-Musik Aufnahme wurde im IEM Cube angefertigt und bietet einen ausgeprägten räumlichen Eindruck, wobei die Ambience-Aufnahme an einer Straßenkreuzung die größte Diffusität aufweist. Diese Aufnahmen wurden mit Soundfield Mikrofonen durchgeführt. Somit werden im Hörversuch vier sehr unterschiedliche Aufnahmeszenarien verwendet.
@@ -56,7 +56,7 @@ Als Wiedergabesytem wurde die Lautsprecheranordnung des Produktionsstudios des I
 
 
 
-Im Falle unseres Hörversuchs muss unbedingt angemerkt werden, dass der Center-Lautsprecher im horizontalen Ring fehlte. Dies führt natürlich zu einer schlechteren Lokalisierbarkeit und höheren Quellbreite an dieser Stelle. Da dieses Verhalten bei allen Algorithmen und für alle Versuchspersonen gleich war, wurde der Hörversuch jedoch trotzdem durchgeführt.
+Im Falle unseres Hörversuchs muss unbedingt angemerkt werden, dass der Center-Lautsprecher im horizontalen Ring fehlte. Dies führt natürlich zu einer schlechteren Lokalisierbarkeit und höheren Quellbreite an dieser Stelle; verglichen mit anwesendem Center-Lautsprecher. Da dieses Verhalten bei allen Algorithmen und für alle Versuchspersonen gleich war, wurde der Hörversuch jedoch trotzdem durchgeführt.
 
 \paragraph{Versuchsinterface}
 Um die Antworten der Versuchspersonen auszuwerten wurde eine Anwendung eingesetzt, die einen MUSHRA-Test realisiert (MUltiple Stimuli with Hidden Reference and Anchor). Diese Anwendung wird über eine \textit{.json}-Datei konfiguriert und kann als Steuerung für die Reaper DAW verwendet werden. Die Anwendung teilt die Zeitspur der DAW in \textit{scenes} auf. Unterschiedliche Klangbeispiele werden daher als Marker zeitlich geordnet. Die verglichenen Algorithmen werden als Spuren in der DAW gesteuert. Schaltet man einen Algorithmus ein, um ihn hörbar zu machen, wird also ein Regler einer Spur in Reaper auf 0dB aufgezogen. Die FOA-Referenz wurde in den getesteten Algorithmen ebenfalls inkludiert.
