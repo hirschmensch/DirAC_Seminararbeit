@@ -2,6 +2,10 @@
 
 %Nach der Berechnung des gerichteten Signalanteils kann auch der Diffusanteil aus dem omnidirektionalen Signal erzeugt werden. Dieser entspricht lediglich dem nicht-gerichteten Anteil des omnidirektionalen Signals und wird daher aus der Filterkurve des Direktanteils bestimmt. Somit ergeben sich an dieser Stelle zwei frequenzabhängige Signalmatrizen für Diffus- und Richtungsanteil. Beide Matrizen besitzen eine Spalte für jeden Lautsprecherkanal und die Zeilenzahl entspricht der FFT-Länge.
 
-Die Trennung von Diffus- und Richtungsanteil erfolgt ebenfalls im Frequenzbereich. Der frequenzabhängige Diffusitätsvektor wird hier verwendet, um den gerichteten Anteil aus den dekodierten Signalen (mit 12 oder 48 Kanälen) zu filtern. Prinzipiell wird für den gerichteten Anteil ein spektraler Block mit zwei Matrizen multipliziert: Erstens mit dem frequenzabhängigen Diffusitätsvektor, und weiters mit der VBAP-Tabelle. Dadurch soll eine Schärfung der Richtungszuordnung erreicht werden. Dies ist möglich, weil bei der Analyse der Diffusität weiters auch die Einfallsrichtung frequenzabhängig festgehalten wird. Somit werden Frequenzbins mit frequenzabhängigen Diffusitätswerten gewichtetet, und diese anschließend durch VBAP auf entsprechende Lautsprecherdreiecke aufgeteilt.
+Die Trennung von Diffus- und Richtungsanteil erfolgt ebenfalls im Frequenzbereich. Dazu werden zwei Filter aus den frequenzabhängigen Diffusitätswerten erzeugt. Der Diffusanteil entspricht dem nicht-gerichteten Anteil der Signale.
 
-Nach der Berechnung des gerichteten Signalanteils kann auch der Diffusanteil aus den dekodierten Signalen erzeugt werden. Dieser entspricht dem nicht-gerichteten Anteil und wird daher aus der Filterkurve des Direktanteils bestimmt. Somit ergeben sich an dieser Stelle zwei frequenzabhängige Signalmatrizen für Diffus- und Richtungsanteil für jedes zeitliche Verarbeitungsfenster. Beide Matrizen besitzen eine Spalte für jeden Wiedergabekanal und die Zeilenzahl entspricht der FFT-Länge.
+Weiters wird ein VBAP-Verfahren auf den gerichteten Signalanteil angewandt. Dies ist möglich, weil bei der Analyse der Diffusität auch die Einfallsrichtung frequenzabhängig festgehalten wird.
+
+Somit werden Frequenzbins mit frequenzabhängigen Diffusitätswerten gewichtetet, und anschließend durch VBAP entsprechenden Lautsprecherdreiecken zugeordnet.
+
+Es ergeben sich an dieser Stelle zwei Signalmatrizen für Diffus- und Richtungsanteil im Frequenzbereich. Beide Matrizen besitzen eine Spalte für jeden Wiedergabekanal und die Zeilenzahl entspricht der FFT-Länge.
