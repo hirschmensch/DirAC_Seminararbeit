@@ -1,6 +1,6 @@
-Zur Bestimmung von Richtungs- und Diffusanteil werden zunächst Schallschnelle und Energie berechnet. Die Schnallschnelle wird als Vektor $\textbf{V}_{m}[k] = [X_{m}[k], Y_{m}[k], Z_{m}[k]]$ aus den gerichteten Anteilen (der Druckgradienten-Mikrofone) des B-Format Signals bestimmt. Der Schalldruck ist der omnidirektionale Anteil $W_{m}[k]$. Die Indizes $m$ und $k$ werden hier zur Kennzeichnung des Zeitfensters als Funktion der Frequenzzahl $k$ verwendet.
+Zur Bestimmung von Richtungs- und Diffusanteil werden zunächst Schallschnelle und Energie berechnet. Die Schnallschnelle wird als Vektor $\textbf{V}_{m}[k] = [X_{m}[k], Y_{m}[k], Z_{m}[k]]$ aus den gerichteten Anteilen des B-Format Signals bestimmt. Der Schalldruck ist der omnidirektionale Anteil $W_{m}[k]$. Die Indizes $m$ und $k$ werden hier zur Kennzeichnung des Zeitfensters als Funktion der Frequenzzahl $k$ verwendet.
 
-Der Pseudo-Schallintensitätsvektor $\textbf{I}_{m}[k]$ wird aus dem Schnellevektor und dem konjugiert komplexen Schalldruck in Gleichung \ref{eq:inten} abgeleitet, wobei hier rein der Realteil heranzogen wird, da sonst die Blindeinteile des Schnellevektors das Ergebnis verfälschen würden \cite{pulkki}. Der Intensitätsvektor stellt bereits die Schalleinfallsrichtung für alle Frequenzbins einzeln dar, jedoch entgegengesetzt der Einfallsrichtung $\textbf{D}_{m}[k]$
+Der Pseudo-Schallintensitätsvektor $\textbf{I}_{m}[k]$ wird aus dem Schnellevektor und dem konjugiert komplexen Schalldruck in Gleichung \ref{eq:inten} abgeleitet, wobei hier rein der Realteil heranzogen wird, da sonst die Blindanteile des Schnellevektors das Ergebnis verfälschen \cite{pulkki}. Der Pseudo-Intensitätsvektor stellt bereits die Schalleinfallsrichtung für alle Frequenzbins einzeln dar, jedoch entgegengesetzt der Einfallsrichtung $\textbf{D}_{m}[k]$
 
 \begin{equation}
     -\textbf{D}_{m}[k] = \textbf{I}_{m}[k] = \Re(W_{m}[k]^{*} \cdot \textbf{V}_{m}[k]) .
@@ -16,9 +16,9 @@ Die Schallenergie $E_{m}[k]$ wird mit Hilfe der Gleichung
 
 ausgewertet.
 
-Um Sprünge in der Lautsprecherzuordnung von gerichteten Signalen bei raschen Bewegungen zu vermeiden, wird der Intensitätsvektor zusätzlich durch eine zeitliche Mittelwertbildung geglättet. Diese Glättung kann im Skript mit einer frequenzabhängigen Zeitkonstante vorgegeben werde. Zusätzlich wird auch der Energievektor zeitlich geglättet. Anschließend wird der Intensitätsvektor verwendet, um die Einfallsrichtungen in sphärischen Koordinaten zu bestimmen.
+Um Sprünge in der Lautsprecherzuordnung von gerichteten Signalen bei raschen Bewegungen zu vermeiden, wird der Intensitätsvektor zusätzlich durch eine zeitliche Mittelwertbildung geglättet. Diese Glättung kann im Skript mit einer frequenzabhängigen Zeitkonstante vorgegeben werden. Zusätzlich wird auch der Energievektor zeitlich geglättet. Anschließend wird der Intensitätsvektor verwendet, um die Einfallsrichtungen in sphärischen Koordinaten zu bestimmen.
 
-Die Diffusität $\psi_{m}[k]$ kann schlussendlich aus dem Vergleich des Betrags des Intensitätsvektors mit der Energie ermittelt werden
+Die Diffusität $\psi_{m}[k]$ kann schlussendlich aus dem Verhältnis des Betrags des Intensitätsvektors zur Energie ermittelt werden
 
 \begin{equation}
     \psi_{m}[k] = \sqrt{1 - \frac{||\mathbb{E}(\textbf{I}_{m}[k])||}{\mathbb{E}(E_{m}[k])}} .
