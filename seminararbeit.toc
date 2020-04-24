@@ -10,9 +10,9 @@
 \contentsline {subsection}{\numberline {2.3}Implementierung}{6}% 
 \contentsline {paragraph}{Initialisierung}{7}% 
 \contentsline {paragraph}{Verarbeitung im Frequenzbereich}{8}% 
-\contentsline {paragraph}{Dekodierung}{8}% 
+\contentsline {paragraph}{Dekodierung/Upmixing}{8}% 
 \contentsline {paragraph}{Analyse von Richtungs- und Diffusanteil}{9}% 
-\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil (und Upmixing)}{9}% 
+\contentsline {paragraph}{Trennung von Diffus- und Richtungsanteil}{9}% 
 \contentsline {paragraph}{Resynthese}{10}% 
 \contentsline {subsection}{\numberline {2.4}Dekorrelationsverfahren}{10}% 
 \contentsline {paragraph}{Random Phase}{10}% 
